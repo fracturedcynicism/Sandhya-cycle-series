@@ -1,0 +1,49 @@
+{
+  "series": {
+    "title": "The Sandhya Cycle series",
+    "subtitle": "A Three-Book noir cosmic horror Series by Fractured Cynicism",
+    "tagline": "Fractured Cynicism",
+    "protagonist": ""
+  },
+  "books": [
+    {
+      "id": 1,
+      "slug": "ASHES OF THE THIRTEENTH YEAR",
+      "title": "ASHES OF THE THIRTEENTH YEAR",
+      "subtitle": "Sandhya cycle 1",
+      "file": "books/Sandhya cycle 1 ASHES OF THE THIRTEENTH YEAR.txt",
+      "atmosphere": "sodium-vapor",
+      "accentColor": "#C8832A",
+      "accentDim": "#7A4E18",
+      "bgTone": "#0D0B08",
+      "description": "Mahabharata Noir",
+      "setting": "The kingdom of Virata"
+    },
+    {
+      "id": 2,
+      "slug": "VENOM OF THE AGE",
+      "title": "VENOM OF THE AGE",
+      "subtitle": "Sandhya cycle 2",
+      "file": "books/Sandhya cycle 2 VENOM OF THE AGE.txt",
+      "atmosphere": "warfare",
+      "accentColor": "#B04030",
+      "accentDim": "#6A2818",
+      "bgTone": "#0B0A0D",
+      "description": "Kurukshetra's Kali yuga",
+      "setting": "Kurukshetra"
+    },
+    {
+      "id": 3,
+      "slug": "THE TORTOISE BACK",
+      "title": "THE TORTOISE BACK",
+      "subtitle": "Sandhya cycle 3",
+      "file": "books/Sandhya cycle 3 THE TORTOISE BACK.txt",
+      "atmosphere": "bureaucratic",
+      "accentColor": "#5A7A4A",
+      "accentDim": "#354A2A",
+      "bgTone": "#090C09",
+      "description": "The Kali Yuga in its peak",
+      "setting": "Various"
+    }
+  ]
+}
