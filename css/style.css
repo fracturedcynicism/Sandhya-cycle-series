@@ -4,7 +4,7 @@
    Fractured Cynicism
    ═══════════════════════════════════════════════ */
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&family=IM+Fell+English:ital@0;1&family=Barlow+Condensed:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Lexend:wght@300;400;500&family=Barlow+Condensed:wght@300;400;500;600;700&display=swap');
 
 /* ── DESIGN TOKENS ─────────────────────────────── */
 :root {
@@ -21,7 +21,6 @@
   --text-muted:      #4A4845;
   --text-dim:        #2E2C2A;
 
-  /* Override these in series.json via accentColor / accentDim */
   --accent:          #C8832A;
   --accent-dim:      #7A4E18;
   --accent-glow:     rgba(200,131,42,0.08);
@@ -32,7 +31,7 @@
   --status-red:      #8A3020;
 
   --font-mono:  'IBM Plex Mono', 'Courier New', monospace;
-  --font-serif: 'IM Fell English', Georgia, serif;
+  --font-serif: 'Lexend', 'Georgia', sans-serif;   /* ← body prose font */
   --font-cond:  'Barlow Condensed', 'Arial Narrow', sans-serif;
 
   --sidebar-w:   260px;
@@ -383,16 +382,15 @@ body {
 
 .welcome-synopsis {
   font-family: var(--font-serif);
-  font-size: 1rem;
+  font-size: 0.95rem;
+  font-weight: 300;
   line-height: 1.8;
   color: var(--text-secondary);
   margin-bottom: 48px;
   max-width: 560px;
 }
 
-.welcome-series-grid {
-  margin-bottom: 40px;
-}
+.welcome-series-grid { margin-bottom: 40px; }
 
 .welcome-book-row {
   display: flex;
@@ -484,11 +482,11 @@ body {
 
 .book-subtitle-line {
   font-family: var(--font-serif);
-  font-size: 0.95rem;
-  font-style: italic;
+  font-size: 0.9rem;
+  font-weight: 300;
   color: var(--text-secondary);
   margin-bottom: 20px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .book-meta-row {
@@ -524,17 +522,18 @@ body {
 
 .book-text {
   font-family: var(--font-serif);
+  font-weight: 300;
   color: var(--text-primary);
 }
 
-/* Font size classes */
-body.font-sm .book-text { font-size: 0.9rem;  line-height: 1.85; }
-body.font-md .book-text { font-size: 1.05rem; line-height: 1.9;  }
-body.font-lg .book-text { font-size: 1.2rem;  line-height: 2.0;  }
-body.font-xl .book-text { font-size: 1.35rem; line-height: 2.05; }
+/* Font size classes — slightly tighter for Lexend's wider glyph width */
+body.font-sm .book-text { font-size: 0.88rem; line-height: 1.8;  }
+body.font-md .book-text { font-size: 1.0rem;  line-height: 1.85; }
+body.font-lg .book-text { font-size: 1.12rem; line-height: 1.9;  }
+body.font-xl .book-text { font-size: 1.25rem; line-height: 1.95; }
 
 .book-para {
-  margin-bottom: 1.25em;
+  margin-bottom: 1.3em;
   text-indent: 1.5em;
 }
 .book-para:first-of-type { text-indent: 0; }
@@ -556,7 +555,6 @@ body.font-xl .book-text { font-size: 1.35rem; line-height: 2.05; }
 }
 .chapter-heading:first-child { margin-top: 0; }
 
-/* Section / scene elements */
 .section-heading {
   display: block;
   font-family: var(--font-cond);
